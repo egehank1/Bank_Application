@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AccountController" stylesheets="@styles.css">
+    <children>
+        <Label id="AccountName" fx:id="accountName" layoutX="50.0" layoutY="50.0" text="AccountName: Placeholder" />
+        <Label fx:id="balance" layoutX="215.0" layoutY="50.0" text="Kontostand: test" />
+        <ListView fx:id="transactionsListView" layoutX="50.0" layoutY="70.0" prefHeight="464.0" prefWidth="423.0">
+            <contextMenu>
+                <ContextMenu fx:id="cmList">
+                    <items>
+                        <MenuItem onAction="#deleteTransaction" text="Löschen" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </ListView>
+        <Button layoutX="50.0" layoutY="550.0" mnemonicParsing="false" onAction="#backButton" text="back" />
+        <Button layoutX="500.0" layoutY="70.0" mnemonicParsing="false" text="aufsteigend" onAction="#getAscendingTransactions" />
+        <Button layoutX="500.0" layoutY="100.0" mnemonicParsing="false" text="absteigend" onAction="#getDescendingTransactions" />
+        <Button layoutX="500.0" layoutY="130.0" mnemonicParsing="false" text="positive" onAction="#getPositivesTransactions"/>
+        <Button layoutX="500.0" layoutY="160.0" mnemonicParsing="false" text="negative" onAction="#getNegativesTransactions" />
+        <Button layoutX="500.0" layoutY="220.0" mnemonicParsing="false" text="new Transaction" onAction="#createTransaction" />
+    </children>
+</AnchorPane>

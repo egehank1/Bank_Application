@@ -1,0 +1,22 @@
+[
+  {
+    "CLASSNAME": "Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.2,
+      "outgoingInterest": 0.1,
+      "date": "2342",
+      "amount": 200.0,
+      "description": "dd"
+    }
+  },
+  {
+    "CLASSNAME": "IncomingTransfer",
+    "INSTANCE": {
+      "sender": "asda",
+      "recipient": "egehan",
+      "date": "1000",
+      "amount": 1000.0,
+      "description": "asa"
+    }
+  }
+]
